@@ -1,0 +1,431 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="referrer" content="unsafe-url"><title>
+	Untitled Page
+</title><link rel="shortcut icon" href="/favicon.ico" /><link href="/CSS/index_layout.css?v=1.5" type="text/css" rel="stylesheet" /><link href="/CSS/index_global.css" type="text/css" rel="stylesheet" /><link href="/CSS/index_link.css" type="text/css" rel="stylesheet" /><link href="/main.css?version=1.1.6" type="text/css" rel="stylesheet" /><link href="/UserManager/Themes/Red/Default.css" rel="stylesheet" /><link href="/UserManager/Themes/Red/web1.css" rel="stylesheet" /><link href="/UserManager/Themes/Red/web.css" rel="stylesheet" /><link href="/UserManager/Themes/Red/login.css" rel="stylesheet" /><link href="/Help/csshelp/helpcb.css" rel="stylesheet" /><link href="/Help/csshelp/helpb.css" rel="stylesheet" /><link href="/Help/csshelp/helpindex.css" rel="stylesheet" /><link href="control/themes/share.css" rel="stylesheet" />
+
+    
+    <style type="text/css">
+        .btSpan {
+            position: relative;
+            cursor: pointer;
+            color: #0066CC;
+        }
+
+        #dynamicDiv {
+            position: absolute;
+            background-color: white;
+            display: none;
+            padding: 10px;
+            border-left: 1px whitesmoke solid;
+            border-top: 1px whitesmoke solid;
+            border-right: 1px #0066CC solid;
+            border-bottom: 1px #0066CC solid;
+        }
+
+            #dynamicDiv a {
+                color: #0066CC;
+            }
+
+        a {
+            color: #0066CC;
+        }
+    </style>
+</head>
+
+<script language="javascript" type="text/javascript">
+    function change_search_style(obj) {
+        var objs = ['buy_search', 'sell_search', 'products_search'];
+        for (var i = 0 ; i < objs.length ; i++) {
+            document.getElementById(objs[i]).className = 'search_tag_b';
+        }
+        obj.className = 'search_tag_a';
+    }
+    function Init_search_style() {
+        var objs = ['buy_search', 'sell_search', 'products_search'];
+        for (var i = 0 ; i < objs.length ; i++) {
+            document.getElementById(objs[i]).className = 'search_tag_b';
+        }
+        if (document.getElementById('_ctl0_hid_typeText')) {
+            if (document.getElementById(document.getElementById('_ctl0_hid_typeText').value)) {
+                document.getElementById(document.getElementById('_ctl0_hid_typeText').value).className = 'search_tag_a';
+            }
+        }
+
+    }
+
+    var url = "http://www.chemicalbook.com";
+    var title = "化学产品供应商搜索--ChemicalBook";
+    function makeLink() {
+        if (document.all)
+            window.external.AddFavorite(url, title)
+    }
+
+</script>
+<body onload="Init_search_style();">
+
+    
+    
+    <form method="post" action="Search.aspx?keyword=108-93-0" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTE1MjI5ODY4NGRkQ/4+HTC7uPphaHp6n7CSPwk8wrgquCwZ5ZmdpRbXxtg=" />
+</div>
+
+        <div class="main_960px">
+            <div class="top_txt_bg" style="position: relative;">
+                <span id="NoUser" style="display:block;margin-top:1px;vertical-align:middle;">
+                    <a title="PriceData" onclick="blur()" href="/UserProfile/Free_GatherData.aspx"><font style="vertical-align: middle;" color="#ff3333">发布供应信息</font></a> | 
+	      <a title="Login" onclick="blur()" href="/UserManager/Login.aspx">登陆</a> | 
+	      <a onclick="blur()" href="/UserManager/Register.aspx">注册</a> |    
+	      <a href="/Search_EN.aspx?keyword=108-93-0&start=" id="TransLink2">
+              <img id="TransImage2" src="/images/english.bmp" /></a> |
+	      <a href="/Search_JP.aspx?keyword=108-93-0&start=" id="TransJapan1">
+              <img id="TransJapanImage1" src="/images/japan.bmp" /></a> | 	   
+	      <a href="/Search_DE.aspx?keyword=108-93-0&start=" id="TransGermany1">
+              <img id="TransGermanyImage1" src="/images/Germany.bmp" /></a> | 	   
+	      <a href="/Search_KR.aspx?keyword=108-93-0&start=" id="TransKR1">
+              <img id="TransKRImage1" src="/images/language_kr.jpg" /></a>
+                </span>
+                <span id="User" style="display:none;margin-top:1px;vertical-align:middle;">
+                    <a title="PriceData" onclick="blur()" href="/UserProfile/Free_GatherData.aspx"><font style="vertical-align: middle;" color="#ff3333">发布供应信息</font></a> |
+	      <font style="vertical-align: middle;" color="#ff3333">欢迎!</font> | 
+	      <a title="Login" onclick="blur()" href="/UserManager/sign_out.aspx">注销</a> | 	        
+	      <a onclick="blur()" href="/UserProfile/companyinfoManage.aspx">我的ChemicalBook</a> |
+	      <a href="/Search_EN.aspx?keyword=108-93-0&start=" id="TransLink">
+              <img id="TransImage" src="/images/english.bmp" /></a> |
+	      <a href="/Search_JP.aspx?keyword=108-93-0&start=" id="TransJapan2">
+              <img id="TransJapanImage2" src="/images/japan.bmp" /></a> | 	   
+	      <a href="/Search_DE.aspx?keyword=108-93-0&start=" id="TransGermany2">
+              <img id="TransGermanyImage2" src="/images/Germany.bmp" /></a> | 	   
+	      <a href="/Search_KR.aspx?keyword=108-93-0&start=" id="TransKR2">
+              <img id="TransKRImage2" src="/images/language_kr.jpg" /></a>
+                </span>
+                
+                <div class="pad_left_10px" id="favorites"><a href="javascript:makeLink()" class="blue" onclick="blur()">添加到收藏夹</a> | <a class="blue" onclick="blur()" href="/ProductIndex.aspx">首页</a> | <a class="blue" onclick="blur()" href="/MyFavorites.aspx"><font style="vertical-align: middle;" color="#ff3333">我收藏的公司列表</font></a></div>
+            </div>
+
+            <div class="logo">
+                <a href="/ProductIndex.aspx">
+                    <img id="logo" src="/logo.gif" style="height:50px;width:207px;" /></a>
+            </div>
+            <div class="search">
+                <div class="pad_top_btm_10px">
+                    <div class="search_left_bg"></div>
+                    <div class="search_middle_bg">
+                        <div class="search_tag">
+                            <div class="search_tag_b" id="products_search" onclick="change_search_style(this);javascript:document.getElementById('_ctl0_hid_typeText').value='products_search';">产  品</div>
+                            <div class="tag_line"></div>
+                            <div class="search_tag_b" id="buy_search"><a href="/BuyingLeadList.aspx">求购信息</a></div>
+                            <div class="tag_line"></div>
+                            <div class="search_tag_b" id="buy2_search"><a href="/SellingLeadList.aspx">供应信息</a></div>
+                            <div class="tag_line"></div>
+                            <div class="search_tag_b" id="sell_search"><a href="/ChemWebSiteList.aspx">化工站点</a></div>
+                            <div class="tag_line"></div>
+                            <div class="search_tag_b" id="sell_search">
+                                <a href="/StructuredSearch.htm">结构式搜索</a>
+                                
+                            </div>
+                        </div>
+                        <input name="_ctl0:hid_typeText" type="text" value="products_search" id="hid_typeText" style="visibility: hidden; display: none;" />
+                        <div class="search_input">
+                            <div class="search_from">
+                                <input name="_ctl0:Keyword" type="text" id="Keyword" />
+                                <input type="submit" name="_ctl0:SearchBtn" value="搜索" id="SearchBtn" />
+                            </div>
+                            <div id="HotKeyWordMaster" class="search_keywords"><strong>热门关键字: </strong><a href="/ProductChemicalPropertiesCB2258634.htm">阿维菌素</a>,<a href="/ProductChemicalPropertiesCB6712800.htm">富马酸二甲酯</a>,<a href="/ProductChemicalPropertiesCB7854099.htm">甲醇</a>,<a href="/ProductChemicalPropertiesCB0498458.htm">焦磷酸钾</a>,<a href="/ProductChemicalPropertiesCB1290608.htm">拉米夫定
+</a>,<a href="/ProductChemicalPropertiesCB3429046.htm">硫化钠</a>,<a href="/ProductChemicalPropertiesCB2147453.htm">十二烷基硫酸钠</a>,<a href="/ProductChemicalPropertiesCB8852805.htm">乙酸异丁酯</a></div>
+                        </div>
+                    </div>
+                    <div class="search_right_bg"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+            
+    <style type="text/css">
+        .i_imglist {
+            width: 166px;
+            height: 100px;
+            z-index: 0;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 2px;
+            border: 1px solid #333;
+        }
+
+            .i_imglist li img {
+                width: 166px;
+                height: 100px;
+                display: block;
+                border: none;
+            }
+
+        .J_imgList_meryer {
+            width: 166px;
+            height: 120px;
+            z-index: 0;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 2px;
+            border: 1px solid #333;
+        }
+
+            .J_imgList_meryer li img {
+                width: 166px;
+                height: 120px;
+                display: block;
+                border: none;
+            }
+    </style>
+
+    
+    <script src="js/jquery-image.js"></script>
+    <script src="/Themes/Jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script language="javascript">
+        $(function () {
+            $("a[data-field='directsale']").click(function () {
+                if (parseInt($("#toreagentmall").val()) > 0) {
+                    $(this).attr("href", "DirectSalesProductList.aspx?cbn=" + $("#toreagentmall").attr("data-cbnumber"));
+                } else {
+                    $(this).attr("href", "/DirectSalesProductGuide.aspx");
+                }
+            });
+        })
+        function showMsgDetail(URL) {
+            window.open(URL, "", "width=770,height=500,top=180,left=120,toolbar=no, menubar=no, scrollbars=yes, resizable=no,location=no, status=yes");
+        }
+        function showMsgDetailNew(URL) {
+            window.open(URL, "", "width=400,height=500,top=180,left=240,toolbar=no, menubar=no, scrollbars=yes, resizable=no,location=no, status=yes");
+        }
+        var flag = false;
+        function setpicWH(ImgD, w, h) {
+            var image = new Image();
+            image.src = ImgD.src;
+            if (image.width > 0 && image.height > 0) {
+                flag = true;
+                if (image.width / image.height >= w / h) {
+                    if (image.width > w) {
+                        ImgD.width = w;
+                        ImgD.height = (image.height * w) / image.width;
+                        ImgD.style.display = "block";
+                    } else {
+                        ImgD.width = image.width;
+                        ImgD.height = image.height;
+                        ImgD.style.display = "block";
+                    }
+                }
+                else {
+                    if (image.height > h) {
+                        ImgD.height = h;
+                        ImgD.width = (image.width * h) / image.height;
+                        ImgD.style.display = "block";
+                    } else {
+                        ImgD.width = image.width;
+                        ImgD.height = image.height;
+                        ImgD.style.display = "block";
+                    }
+                }
+            }
+        }
+    </script>
+
+    <table class="header" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td>
+                <p class="rtd">ChemicalBook >> <a id="ContentPlaceHolder1_A1" target="_blank">谷歌</a> | <a id="ContentPlaceHolder1_A2" target="_blank">百度</a> | <a id="ContentPlaceHolder1_A3" target="_blank">阿里巴巴</a> | <a id="ContentPlaceHolder1_A4" target="_blank">化工网</a> | <a id="ContentPlaceHolder1_A5" target="_blank">慧聪网</a> | <a id="ContentPlaceHolder1_A6" target="_blank">必应</a> | <a id="ContentPlaceHolder1_A7" target="_blank">搜狗</a> | <a id="ContentPlaceHolder1_A8" target="_blank">有道</a> | <a id="ContentPlaceHolder1_A9" target="_blank">腾讯</a></p>
+            </td>
+            <td>
+                <p class="summary">
+                    <span id="ContentPlaceHolder1_LabelSummary"></span>
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+            <td valign="top">
+                <table width="100%" align="left">
+                    <tr>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="font-size: 12pt;">
+                            <p class="paging">
+                                Result page:
+										
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center"></td>
+                    </tr>
+                </table>
+            </td>
+            <td width="160" valign="top">
+
+                <div style="text-align: center; margin-top: 5px; background: #deeef4; line-height: 25px;" class="show"><a href="../UserProfile/BuyAds.aspx?AdsCode=10"><font color="#ff9933" style="font-size: 10pt;">我要显示在这里</font></a></div>
+                <div class="img_list">
+
+                    <div class="i_imglist">
+                        <ul id="J_imgList_meryer">
+                            <li>
+                                <a href="http://www.meryer.com/cn/index/" target="_blank">
+                                    <img src="images/meryer01.jpg" alt="" title="" /></a></li>
+                            
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="i_imglist">
+                        <ul id="J_imgList">
+                            <li><a href="http://www.sigmaaldrich.com/china-mainland/news/chemical-synthesis-reagents.html?cm_mmc=chemicalbook-_-affiliate-_-banner-_-aldrich" target="_blank">
+                                <img src="images/SRP-banner1.jpg" alt="" title="" /></a></li>
+                            <li><a href="http://www.sigmaaldrich.com/china-mainland/vetec.html?cm_mmc=chemicalbook-_-affiliate-_-banner-_-vetec" target="_blank">
+                                <img src="images/SRP-banner2.jpg" alt="" title="" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="i_imglist">
+                        <ul id="J_imgList_shyuanye">
+                            <li><a href="http://www.shyuanye.com" target="_blank">
+                                <img src="images/shyuanye1.jpg" alt="" title="" /></a></li>
+                            <li><a href="http://www.shyuanye.com" target="_blank">
+                                <img src="images/shyuanye2.jpg" alt="" title="" /></a></li>
+                        </ul>
+                    </div>
+                    <a target="_blank" href="http://www.acmec-e.com">
+                        <img src="/images/acmec-e.gif" /></a>
+                </div>
+                <div class="i_imglist">
+                    <ul id="J_imgList_hxsj">
+                        <li><a href="http://www.xunzhuo.com.cn/" target="_blank">
+                            <img src="images/gif.gif" alt="" title="" /></a></li>
+                    </ul>
+                </div>
+                <div class="i_imglist">
+                    <ul id="J_imgList_rjsw">
+                        <li><a href="http://www.shruji.com/" target="_blank">
+                            <img src="images/RJ.gif" alt="" title="" /></a></li>
+                    </ul>
+                </div>
+                <!--<span id="_ctl0_ContentPlaceHolder1_AdDetailA"></span>-->
+            </td>
+
+        </tr>
+    </table>
+
+    <!--隐藏层,用于显示动态数据-->
+    <div id="dynamicDiv" onmouseover="endTimer();" onmouseout="setHidden();"></div>
+
+    <script type="text/javascript">
+        $(function () {
+            var imgField = $('#J_imgList');
+            var imgList = $('#J_imgList>li');
+
+            var imgFieldMeryer = $('#J_imgList_meryer');
+            var imgListMeryer = $('#J_imgList_meryer>li');
+
+            var N = 0;//图片初始索引
+            var P = 1;//屏初始索引
+            var goFun = null;
+
+            var NMeryer = 0;//图片初始索引
+            var PFunMeryer = 1;//屏初始索引
+            var goFunMeryer = null;
+
+
+            var turnPage = 2;//每屏显示数
+            var T = 3000;//切换间隔时间
+            var turnT = 300;//animate时间
+
+            var turnTMeryer = 300;//animate时间
+            var TMeryer = 3000;//切换间隔时
+
+            //初始图片区域高度与标题区域宽度
+            imgField.height(imgList.size() * imgList.height());
+            imgFieldMeryer.height(imgListMeryer.size() * imgListMeryer.height());
+
+
+            //初始自动切换
+            GO();
+            GOMeryer();
+            //自动切换
+            function GO() {
+                imgField.stop().animate({
+                    marginTop: -N * (imgList.height())
+                }, turnT);
+
+
+                N++;
+                //console.log(N)
+                N = N >= imgList.size() ? 0 : N;
+                P = Math.ceil(N / turnPage);
+                goFun = setTimeout(GO, T);
+            }
+            function GOMeryer() {
+                imgFieldMeryer.stop().animate({
+                    marginTop: -NMeryer * (imgListMeryer.height())
+                }, turnTMeryer);
+
+
+                NMeryer++;
+                //console.log(N)
+                NMeryer = NMeryer >= imgListMeryer.size() ? 0 : NMeryer;
+                PFunMeryer = Math.ceil(NMeryer / turnPage);
+                goFunMeryer = setTimeout(GOMeryer, TMeryer);
+            }
+
+
+            $('[data-field="ReagentMall"]').each(function () {
+                var c = $(this).attr('data-reagentmallcount');
+                if (c > 0) {
+                    $(this).show();
+                }
+            });
+        });
+
+
+    </script>
+    
+    
+    
+            <div class="clear"></div>
+            <div class="foot">
+                <ul>
+                    <li class="pad_top_5px">
+                        <a rel="nofollow" href="/ProductIndex.aspx">主页</a> | 
+                          <a rel="nofollow" href="/AboutUs.aspx">关于我们</a> | 
+		<a rel="nofollow" href="/UserProfile/VIPInfo.aspx">企业会员服务</a> | 
+		<a rel="nofollow" href="/UserProfile/BuyAds.aspx">广告业务</a> | 
+		<a rel="nofollow" href="/ContactUS.aspx">联系我们</a> | 
+		<a rel="nofollow" href="/indexCN.aspx">旧版入口</a> | 
+		<a rel="nofollow" href="/ProductMSDSList_0.htm">中文MSDS</a> | 
+		<a rel="nofollow" href="/ShowAllProductByIndexID_CAS_16_0.htm">CAS Index</a> | 
+		<a rel="nofollow" href="/CASDetailList_0.htm">常用化学品CAS列表</a> | 
+		<a rel="nofollow" href="/ChemicalProductsList_0.htm">化工产品目录</a> | 
+		<a rel="nofollow" href="/ShowAllNewProductList_0.htm">新产品列表</a> | 
+        
+                        <a rel="nofollow" href="/News/TopicsSummary.htm" target="_blank">专题集</a> |
+                        <a rel="nofollow" href="http://hscode.chemicalbook.com">HS海关编码</a> <br />
+                        <a rel="nofollow" href="http://msds.chemicalbook.com">MSDS查询</a> | <a rel="nofollow" href="/ProductCategoryAll.htm">产品厂家与价格库</a> | <a rel="nofollow" href="/license.html">营业执照公示</a>
+                    </li>
+                    <li class="gary">Copyright &copy; 2016 ChemicalBook <a href="http://www.miibeian.gov.cn/" target="_blank"></a>&nbsp;&nbsp;<a href="http://www.chemicalbook.com/Yaopinxukezheng.jpg" target="_blank">互联网药品信息服务资格证编号(京)-非经营性-2015-0073</a>&nbsp;&nbsp; <span style="position:relative;top:4px;"> <img src="images/ba.png" /> <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011402010385" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11011402010385号</p></a></span>&nbsp;&nbsp;All rights reserved.</li>
+                </ul>
+              
+            </div>
+            <a></a>
+        </div>
+    </form>
+
+         <script src="/Themes/Jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="/js/master.min.js" type="text/javascript"></script>
+    <script src="control/newcustvisitinfo.js?v=1.9" type="text/javascript"></script>
+
+</body>
+</html>

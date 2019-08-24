@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>下载.jpg</file>
+  </qresource>
+</RCC>
